@@ -7,7 +7,9 @@ app = Flask(__name__)
 # =====================
 # AI KEY
 # =====================
-client = Groq(api_key="")
+import os
+api_key=os.getenv("API_KEY")
+
 
 # =====================
 # UNO GAME CLASS
